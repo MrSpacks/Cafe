@@ -1,0 +1,194 @@
+/* reset */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: inherit; /* no underline */
+  }
+  
+
+  .wrapper {
+    font-family: 'Young Serif', serif;
+    background-image: url(img/pexels-lawrence-suzara-1581554.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+  .header_conteiner {
+    margin-bottom: 5px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(255,255,255,0.5);
+  }
+  .header_logo {
+    margin-left: 20px;
+    max-width: 50px;
+  }
+  .header_nav {
+    display: flex;
+  }
+  .nav_items {
+
+    display: flex;
+  }
+  .nav_item {
+    padding: 10px;
+  }
+  .lang{
+    display: flex;
+  }
+  .header_btn{
+    padding: 10px;
+  }
+  main{
+
+  }
+  .main_conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .main_text{
+    text-shadow: 5px 5px 10px rgb(0,0,0,0.3);
+    font-size: 150px;
+    margin-top: -100px;
+    font-weight: 600;
+    line-height: 150px;
+    letter-spacing: 30px;
+    color: aliceblue;
+    text-align: center;
+    
+  }
+  .footer_conteiner {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(255,255,255,0.5);
+  }
+  a:hover{
+    color: red;
+    transition: 0.3;
+  }
+
+  /* CONTACTS MAIN */
+
+  .form {
+    padding:  30px 10px;
+    background-color: rgb(255,255,255,0.7);
+    max-width: 550px;
+    margin: 0 auto;
+  }
+  .form_body {
+  }
+  .form_title {
+    margin-bottom: 30px;
+  }
+  .form_item {
+  }
+  .form_label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .form_input {
+    height: 50px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 0 20px;
+  }
+  textarea.form_input{
+    min-height: 120px;
+    resize: vertical;
+    padding: 10px;
+  }
+  .file {
+  }
+  .file_item {
+    position: relative;
+  }
+  .file_input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+  }
+  .form_button {
+    display: inline-flex;
+    min-height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .3s;
+    position: relative;
+    box-shadow: 0 3px 0 #000;
+  }
+  .form_button:hover{
+    background-color: #d0d0d0;
+  }
+  .form_button:active {
+    top: 2px;
+    left: 2px;
+    box-shadow: 0 0px 0 #000;
+
+  }
+  
+  .checkbox {
+  }
+  .checkbox_input {
+  }
+  .checkbox_lable {
+  }
+  .form_button {
+  }
+  /* ABOUT */
+
+  .main_about {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: rgb(255,255,255,0.7);
+  }
+  .about_title {
+    margin: 20px;
+  }
+.menu_conteiner{
+  display: flex;
+  margin: 0 auto;
+  height: 80vh;
+}
