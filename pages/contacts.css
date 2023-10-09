@@ -6,7 +6,13 @@
 :focus::-moz-placeholder {opacity: 0;}    
 :focus:-moz-placeholder {opacity: 0;}    
 :focus:-ms-input-placeholder {opacity: 0;}    
+.forma{
+    max-width: 700px;
+    margin: 0 auto;
+}
 .form-at {
+    margin: 20px;
+
     width: 100%;
     padding: 20px;
     box-sizing: border-box; 
