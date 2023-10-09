@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafe</title>
+    <link rel="stylesheet" href="contacts.css">
     <link rel="stylesheet" href="../style.css">
     <script defer src="../app.js"></script>
     <script defer src="send.js"></script>
@@ -35,34 +36,28 @@
                 
         </header>
         <main>
-            <div class="form">
-                <form action="#" id="form" class="form_body">
-                    <h1 class="form_title">send me E-mail</h1>
-                    <div class="form_item">
-                        <label class="form_label" for="formName">Name*:</label>
-                        <input class="form_input _req" id="formName" type="text" name="name">
+            <div class="forma">
+                <div class="form-at">
+                    <div class="validate-input-at w-50" data-validate="Обязательное поле">
+                        <input class="input-at" type="text" name="name-at" placeholder="Ваше имя" />
+                        <span class="focus-input-at"></span>
                     </div>
-                    <div class="form_item">
-                        <label class="form_label" for="formEmail">E-mail*:</label>
-                        <input class="form_input _req _email" id="formEmail" type="text" name="E-mail">
+                    <div class="validate-input-at w-50" data-validate="Обязательное поле">
+                        <input class="input-at" type="text" name="email-at" placeholder="Ваш телефон или email" />
+                        <span class="focus-input-at"></span>
                     </div>
-                    <div class="form_item">
-                        <label class="form_label" for="formMassege">Massege:</label>
-                        <textarea class="form_input" name="massege" id="formMassege"></textarea>
+                    <div class="validate-input-at" data-validate="Обязательное поле">
+                        <textarea class="input-at" name="message-at" placeholder="Ваше сообщение"></textarea>
+                        <span class="focus-input-at"></span>
                     </div>
-                    <div class="form_item">
-                        <div class="checkbox">
-                            <input id="formAgreement" type="checkbox" name="agreement" class="checkbox_input _req">
-                            <label for="formAgreement" class="checkbox_lable"><span>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                Blanditiis odit dolore, delectus, nihil quod voluptate fugiat 
-                                excepturi explicabo iusto porro asperiores esse, 
-                                soluta odio placeat maiores praesentium consequatur atque in.
-                            </span></label>
-                        </div>
-                    </div>
-                    <button class="form_button" type="submit">Send</button>
-                </form>
+                    <input checked="checked" class="input-at" id="checkbox-at" type="checkbox" name="checkbox-at" onchange="document.getElementById('submit-at').disabled = !this.checked;" />
+                    <label for="checkbox-at">
+                        Настоящим подтверждаю, что я ознакомлен и согласен с <a href="#rules">пользовательским соглашением</a>
+                    </label> 
+                    <input type="hidden" name="subject-at" value="Тема формы">
+                    <button id="submit-at" class="form-at-btn">Отправить</button>
+                </div>
+                <div class="result-at"></div>
             </div>
         </main>
         <footer>
